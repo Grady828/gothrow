@@ -3,7 +3,11 @@ require "faraday"
 
 class PagesController < ApplicationController
     def home
-        @parsed = Dgcr.new_lookup(12828)
+        @parsed = Courses.new_lookup(12911)
+    end  
+    
+    def index 
+        @parsed = Courses.new_lookup(12911)
     end    
 end
 
