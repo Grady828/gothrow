@@ -1,0 +1,2 @@
+class Findzip < ApplicationRecord
+end
