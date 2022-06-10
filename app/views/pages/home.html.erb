@@ -1,26 +1,5 @@
-<%
-=begin%>
- <% if @parsed %>
-    <div class="card card-header findzip-block">
-        <strong>Course Name:</strong><%= @parsed [ "name" ] %>
-        <strong>Zip Code:</strong><%= @parsed[ "zipcode" ] %>
-        <strong>City:</strong><%= @parsed[ "city" ] %>
-        <strong>State:</strong><%= @parsed[ "state" ] %>
-        <strong>Rating:</strong><%= @parsed[ "rating" ] %>
-    </div>    
-<% end %> 
-<%
-=end%>
-
-<% @parsed.each do |parse| %>
-   <strong>Course Name: </strong><%= "#{parse[ "name" ]} " %>
-   <strong>City: </strong><%= "#{parse[ "city"]} " %>
-   <strong>State: </strong><%= "#{parse[ "state"]} " %>
-   <strong>Holes: </strong><%= "#{parse[ "holes"]} " %>
-   <strong>Rating: </strong><%= "#{parse[ "rating"]} " %><br>
-
-
-<% end %>
+<h1>Welcome to the Go Throw! </h1>
+<p>Find a course near you.<p>
 
 
 
