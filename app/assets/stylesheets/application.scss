@@ -5,12 +5,20 @@
 
 .navbar {
     background-color: #b0d9e3 !important;
-  }  
-    
+    .nav-link {
+      text-decoration: none;
+    }
+  }
+  
   .navbar-brand {  
     font-size: 3rem;
   }
-    
+  
   h1 {  
-    color: red;
+    color: rgb(83, 110, 147);
   }
+  
+  h3 {
+    color: rgb(83, 110, 147);
+  }  
+    

@@ -1,10 +1,11 @@
-<% @parsed.each do |parse| %>
-    <div class="card card-header zipcode-block">
-        <strong>Course Name: </strong><%= "#{parse[ "name" ]} " %>
-        <strong>City: </strong><%= "#{parse[ "city"]} " %>
-        <strong>State: </strong><%= "#{parse[ "state"]} " %>
-        <strong>Holes: </strong><%= "#{parse[ "holes"]} " %>
-        <strong>Rating: </strong><%= "#{parse[ "rating"]} " %><br>
-    </div>
-
-<% end %>
+<div class="container">
+    <% @courses.each do |parse| %>
+        <div class="card card-header zipcode-block">
+            <strong>Course Name: </strong><%= "#{parse[ "name" ]} " %>
+            <strong>City: </strong><%= "#{parse[ "city"]} " %>
+            <strong>State: </strong><%= "#{parse[ "state"]} " %>
+            <strong>Holes: </strong><%= "#{parse[ "holes"]} " %>
+            <strong>Rating: </strong><%= "#{parse[ "rating"]} " %><br>
+        </div>
+    <% end %>
+</div>    

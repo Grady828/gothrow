@@ -9,6 +9,7 @@ gem "digest"
 gem "faraday"
 gem "bootstrap"
 gem "jquery-rails"
+gem "zip-code-info"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
