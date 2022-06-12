@@ -3,11 +3,17 @@
 
 @import "bootstrap";  
 
+
+
 .navbar {
     background-color: #b0d9e3 !important;
     .nav-link {
       text-decoration: none;
     }
+  }
+
+  body {
+    background-color: #e0e7e6 ;
   }
   
   .navbar-brand {  
