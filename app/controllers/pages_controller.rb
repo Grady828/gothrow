@@ -6,8 +6,9 @@ class PagesController < ApplicationController
     end  
     
     def courses 
-        @parsed = Courses.new_lookup(12911)
-    end    
+        @parsed = Courses.new_lookup(params[:findzip])
+    end 
+      
 end
 
 

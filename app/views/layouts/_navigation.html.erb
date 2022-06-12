@@ -32,7 +32,7 @@
 =end%>
           </ul>
             <%= form_with url: "/courses/search", method: :get do |form| %>
-                <%= form.label :findzip, "Search for:" %>
+                <%= form.label :findzip, "Search Zip Code:" %>
                 <%= form.text_field :findzip %>
                 <%= form.submit "Search" %>
             <% end %>
