@@ -6,6 +6,7 @@
             <strong>State: </strong><%= "#{parse[ "state"]} " %>
             <strong>Holes: </strong><%= "#{parse[ "holes"]} " %>
             <strong>Rating: </strong><%= "#{parse[ "rating"]} " %><br>
+            <%= link_to "Course Details", "/courses/course_info/#{parse["course_id"]}", class: "btn btn-outline-info" %>
         </div>
     <% end %>
 </div>    

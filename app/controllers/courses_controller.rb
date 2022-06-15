@@ -1,6 +1,5 @@
 class CoursesController < ApplicationController
     def search
-        
         if params[:findzip].present?
            
             @courses = Courses.new_lookup(params[:findzip])

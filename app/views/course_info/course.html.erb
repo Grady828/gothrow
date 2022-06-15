@@ -1,0 +1,11 @@
+<% if @course %>
+    <div class="card card-header results-block">
+        <strong>Name:</strong> <%= @course["name"] %>
+        <strong>Holes:</strong> <%= @course["holes"] %>
+        <strong>Reviews:</strong> <%= @course["reviews"] %>
+        <strong>Course Rating:</strong> <%= @course["rating"] %>
+        <strong>Private Course?:</strong> <%= @course["private"] %>
+        <strong>Pay To Play?:</strong> <%= @course["paytoplay"] %>
+        <img src="<%= (@course["course_photo_url_medium"]) %>" class="pic" >
+    </div> 
+<% end %>

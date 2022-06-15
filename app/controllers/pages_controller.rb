@@ -8,6 +8,10 @@ class PagesController < ApplicationController
     def courses 
         @parsed = Courses.new_lookup(params[:findzip])
     end 
+
+    def course
+        @parsed = Course.new_lookup(params[:crseinfo])
+    end    
       
 end
 
