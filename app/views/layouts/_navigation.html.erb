@@ -1,22 +1,20 @@
  <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-            <a class="navbar-brand" href="#">Go Throw!</a>
+            <a class="navbar-brand" href="/">Go Throw!</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link-active" aria-current="page" href="#"><%= link_to "Home", root_path %></a>
-                    </li>
-                    <li class="nav-search">
-                        <%= form_with url: "/courses/search", method: :get do |form| %>
-                            <%= form.label :findzip, "Search Zip Code:" %>
-                            <%= form.text_field :findzip %>
-                            <%= form.submit "Search" %>
-                        <% end %>
+
+                        <%= link_to "Home", root_path, :class=>"nav-link text-dark" %>
                     </li>
                 </ul>
+                        <%= form_with( url: "/courses/search", method: :get, class: "d-flex") do |form| %>
+                          <%= form.search_field :findzip, placeholder: "ZIP Code", class: "form-control me-2" %></li>
+                          <%= form.submit "Search", class: "btn btn-outline-success" %>
+                        <% end %>
             </div>
       </div>
  </nav>

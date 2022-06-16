@@ -1,11 +1,25 @@
 <% if @course %>
-    <div class="card card-header results-block">
-        <strong>Name:</strong> <%= @course["name"] %>
-        <strong>Holes:</strong> <%= @course["holes"] %>
-        <strong>Reviews:</strong> <%= @course["reviews"] %>
-        <strong>Course Rating:</strong> <%= @course["rating"] %>
-        <strong>Private Course?:</strong> <%= @course["private"] %>
-        <strong>Pay To Play?:</strong> <%= @course["paytoplay"] %>
-        <img src="<%= (@course["course_photo_url_medium"]) %>" class="pic" >
-    </div> 
+    <div class="d-flex flex-column mx-auto">
+        <div class="d-flex flex-column">
+            <strong>Name:</strong> <%= @course["name"] %>
+            <strong>City:</strong> <%= @course["city"] %>
+            <strong>Address:</strong> <%= @course["street_addr"] %>
+            <strong>Holes:</strong> <%= @course["holes"] %>
+            <strong>Course Rating:</strong> <%= @course["rating"] %>
+            <img src="<%= (@course["rating_img_small"]) %>" class="ratingpic" >
+            <strong>Private Course?:</strong> <%= @course["private"] %>
+            <strong>Pay To Play?:</strong> <%= @course["paytoplay"] %>
+            <div>
+             <%= link_to "Course Website on DGCR", @course["dgcr_url"], :class=>"btn btn-outline-success" %>
+            </div>
+        </div>
+        <div class="container text-center mx-auto">
+          <h3><%= @course["course_photo_caption"] %></h3>
+          <div>
+            <img src="<%= (@course["course_photo_url_medium"]) %>" class="pic" >
+          </div>
+        </div>
+    </div>
+
+
 <% end %>

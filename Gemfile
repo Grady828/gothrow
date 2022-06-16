@@ -10,6 +10,7 @@ gem "faraday"
 gem "bootstrap"
 gem "jquery-rails"
 gem "zip-code-info"
+gem "rufo"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
