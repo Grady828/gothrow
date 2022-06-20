@@ -1,11 +1,11 @@
 <div class="container">
     <% @courses.each do |parse| %>
-        <div class="card card-header zipcode-block text-light .bg-gradient">
+        <div class="card card-header zipcode-block text-dark .bg-gradient">
             <strong>Course Name: </strong><%= "#{parse[ "name" ]} " %>
             <strong>City: </strong><%= "#{parse[ "city"]} " %>
             <strong>State: </strong><%= "#{parse[ "state"]} " %><br>
-            <%= link_to "Course Details", "/courses/course_info/#{parse["course_id"]}", :class => "btn btn-outline-info" %>
         </div>
+            <%= link_to "Course Details", "/courses/course_info/#{parse["course_id"]}", :class => "btn btn-outline-info" %>
         <div class="container text-center mx-auto">
             <%= image_tag "disc.png", :class => "style_image" %>
         </div>
