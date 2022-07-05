@@ -4,6 +4,11 @@
             <strong>Name:</strong> <%= @course["name"] %>
             <strong>City:</strong> <%= @course["city"] %>
             <strong>Address:</strong> <%= @course["street_addr"] %>
+            <%
+=begin%>
+ <img src="app/assets/gt.png" class="rounded float-end">
+<%
+=end%>
             <strong>Holes:</strong> <%= @course["holes"] %>
             <strong>Course Rating:</strong> <%= @course["rating"] %>
             <img src="<%= (@course["rating_img_small"]) %>" class="ratingpic" >
